@@ -11,11 +11,14 @@ public class AwsConsoleApp {
     public static void main(String[] args) throws Exception {
     	initialize_variables();
     	instance_id=instance_runner.run_instance();
+    	System.out.println(instance_id);
     	state=instance_state.return_state(instance_id);
+    	System.out.print(state);
     	while(state.equals("running")){
     		Thread.currentThread();
     		Thread.sleep(5000);
     		state=instance_state.return_state(instance_id);
+    		System.out.println(state);
     	}
     	instance_terminator.terminate_instance(instance_id);
     }

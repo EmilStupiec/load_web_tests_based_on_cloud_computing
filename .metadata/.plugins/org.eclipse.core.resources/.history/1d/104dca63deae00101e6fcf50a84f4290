@@ -1,0 +1,24 @@
+import emil.stupiec.Instance_runner;
+import emil.stupiec.Instance_state;
+import emil.stupiec.Instance_terminator;
+
+public class AwsConsoleApp {
+
+    public static void main(String[] args) throws Exception {
+    	Instance_runner instance_runner=new Instance_runner();
+    	Instance_state instance_state=new Instance_state();
+    	String instance_id=instance_runner.run_instance();
+    	String state=instance_state.return_state(instance_id);
+    	System.out.print(state);
+    	while(state!="running"){
+    		Thread.currentThread();
+    		Thread.sleep(5000);
+    		state=instance_state.return_state(instance_id);
+    		System.out.print(state);
+    		if(state=="running")
+    			break;
+    	}
+    	Instance_terminator instance_terminator=new Instance_terminator();
+    	instance_terminator.terminate_instance(instance_id);
+    }
+}

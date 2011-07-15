@@ -1,0 +1,25 @@
+package emil.stupiec;
+
+import java.util.ArrayList;
+
+import com.amazonaws.auth.AWSCredentials;
+import com.amazonaws.auth.PropertiesCredentials;
+import com.amazonaws.services.ec2.AmazonEC2;
+import com.amazonaws.services.ec2.AmazonEC2Client;
+import com.amazonaws.services.ec2.model.DescribeImagesRequest;
+import com.amazonaws.services.ec2.model.RunInstancesRequest;
+
+public class Instance_state{
+	private String state;
+	private static AmazonEC2 ec2;
+	private static void initialize_aws_variables() throws Exception {
+		AWSCredentials credentials = new PropertiesCredentials(
+				Instance_runner.class.getResourceAsStream("../../AwsCredentials.properties"));
+        ec2 = new AmazonEC2Client(credentials);
+        ec2.setEndpoint("ec2.eu-west-1.amazonaws.com");
+	}
+	public String return_state() throws Exception{
+		initialize_aws_variables();
+		return state;
+	}
+}

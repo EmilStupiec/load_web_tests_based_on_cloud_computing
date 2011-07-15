@@ -12,8 +12,8 @@ import com.amazonaws.services.ec2.model.TerminateInstancesResult;
 
 public class Instance_terminator {
 	private static AmazonEC2 ec2;
+	private static String instance_id;
 	private static TerminateInstancesResult terminate_instances_result;
-	private static TerminateInstancesRequest terminate_instances_request;
 	public String terminate_instance(String instance_id) throws Exception{
 		initialize_aws_variables(instance_id);
 		return terminate();
@@ -23,12 +23,31 @@ public class Instance_terminator {
 				Instance_runner.class.getResourceAsStream("../../AwsCredentials.properties"));
         ec2 = new AmazonEC2Client(credentials);
         ec2.setEndpoint("ec2.eu-west-1.amazonaws.com");
-		List<String> instance_ids=new ArrayList<String>();
-		instance_ids.add(instance_id_to_terminate);
-		terminate_instances_request=new TerminateInstancesRequest(instance_ids);
+        instance_id=instance_id_to_terminate;
+        
 	}
 	private String terminate(){
+		List<String> instance_ids=new ArrayList<String>();
+		instance_ids.add(instance_id);
+		TerminateInstancesRequest terminate_instances_request=new TerminateInstancesRequest(instance_ids);
         terminate_instances_result=ec2.terminateInstances(terminate_instances_request);
 		return terminate_instances_result.toString();
-	}	
+	}
+	//System.out.print("Available images: "+describe_images_result.toString());
+    /*DescribeAvailabilityZonesResult availabilityZonesResult = ec2.describeAvailabilityZones();
+    System.out.println("You have access to " + availabilityZonesResult.getAvailabilityZones().size() +
+            " Availability Zones.");
+    DescribeInstancesResult describeInstancesRequest = ec2.describeInstances();
+    List<Reservation> reservations = describeInstancesRequest.getReservations();
+    Set<Instance> instances = new HashSet<Instance>();
+    for (Reservation reservation : reservations) {
+        instances.addAll(reservation.getInstances());
+    }
+    for (Instance instance : instances) {
+    	System.out.println(instance.getInstanceId());
+    	instance_id.add(instance.getInstanceId());
+    }
+    System.out.println("You have " + instances.size() + " Amazon EC2 instance(s) running.");*/
+   
+	
 }

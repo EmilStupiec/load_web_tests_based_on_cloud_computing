@@ -1,0 +1,35 @@
+package emil.stupiec;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.amazonaws.auth.AWSCredentials;
+import com.amazonaws.auth.PropertiesCredentials;
+import com.amazonaws.services.ec2.AmazonEC2;
+import com.amazonaws.services.ec2.AmazonEC2Client;
+import com.amazonaws.services.ec2.model.DescribeImagesRequest;
+import com.amazonaws.services.ec2.model.DescribeInstancesRequest;
+import com.amazonaws.services.ec2.model.DescribeInstancesResult;
+import com.amazonaws.services.ec2.model.RunInstancesRequest;
+
+public class Instance_state{
+	private String state;
+	private static AmazonEC2 ec2;
+	private static DescribeInstancesResult describe_instances_result;
+	private static DescribeInstancesRequest describe_instances_request;
+	private static void initialize_aws_variables(String instance_id) throws Exception {
+		AWSCredentials credentials = new PropertiesCredentials(
+				Instance_runner.class.getResourceAsStream("../../AwsCredentials.properties"));
+        ec2 = new AmazonEC2Client(credentials);
+        ec2.setEndpoint("ec2.eu-west-1.amazonaws.com");
+        describe_instances_request=new DescribeInstancesRequest();
+        List<String> instance_ids=new ArrayList<String>();
+        instance_ids.add(instance_id);
+        describe_instances_request.setInstanceIds(instance_ids);
+	}
+	public String return_state(String instance_id) throws Exception{
+		initialize_aws_variables(instance_id);
+		describe_instances_result=ec2.describeInstances(describe_instances_request);
+		return state;
+	}
+}
