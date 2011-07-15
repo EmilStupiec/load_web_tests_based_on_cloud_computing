@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="13" version="2.0">
+<workbench progressCount="10" version="2.0">
 <workbenchAdvisor/>
 <window height="726" maximized="true" width="1020" x="0" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -20,7 +20,8 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="172" y="34"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -29,25 +30,53 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Instance_terminator.java" partName="Instance_terminator.java" path="/home/ryu/Pulpit/eclipse_projects/load_web_tests_based_on_cloud_computing/instance_manager/src/emil/stupiec/Instance_terminator.java" title="Instance_terminator.java" tooltip="instance_manager/src/emil/stupiec/Instance_terminator.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/instance_manager/src/emil/stupiec/Instance_terminator.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1427" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Instance_runner.java" partName="Instance_runner.java" path="/home/ryu/Pulpit/eclipse_projects/load_web_tests_based_on_cloud_computing/instance_manager/src/emil/stupiec/Instance_runner.java" title="Instance_runner.java" tooltip="instance_manager/src/emil/stupiec/Instance_runner.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/instance_manager/src/emil/stupiec/Instance_runner.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="60" selectionOffset="1725" selectionTopPixel="387"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AwsConsoleApp.java" partName="AwsConsoleApp.java" path="/home/ryu/Pulpit/eclipse_projects/load_web_tests_based_on_cloud_computing/instance_manager/src/AwsConsoleApp.java" title="AwsConsoleApp.java" tooltip="instance_manager/src/AwsConsoleApp.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/instance_manager/src/AwsConsoleApp.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="545" selectionTopPixel="97"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Instance_state.java" partName="Instance_state.java" path="/home/ryu/Pulpit/eclipse_projects/load_web_tests_based_on_cloud_computing/instance_manager/src/emil/stupiec/Instance_state.java" title="Instance_state.java" tooltip="instance_manager/src/emil/stupiec/Instance_state.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/instance_manager/src/emil/stupiec/Instance_state.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="422" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
-<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy">
+<viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" link_editors="0" mv_vertical_scroll="0" orientation="3" qualified_names="0" ratio="350" showinherited="false" sortbydefiningtype="false" vertical_scroll="0" view="2" workingSetName="Aggregate for window 1310726379967"/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (4 items)"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="337" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
+<columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="592" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1310726379967">
@@ -85,7 +114,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -143,10 +172,11 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -163,6 +193,20 @@
 </presentation>
 </folder>
 </info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@aecba1" ratio="0.74871796" ratioLeft="438" ratioRight="147" relationship="4" relative="left">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@13ada" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
@@ -173,19 +217,11 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.7495712" ratioLeft="437" ratioRight="146" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
-<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
@@ -203,7 +239,164 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/instance_manager/src/emil/stupiec/Instance_terminator.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/instance_manager/src/AwsConsoleApp.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/instance_manager/src/emil/stupiec/Instance_state.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/instance_manager/src/emil/stupiec/Instance_runner.java"/>
+</editors>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="1149" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position/>
+</item>
+<item historyLabel="Instance_terminator.java" index="0">
+<position info="not_deleted" x="1202" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="393" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="809" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="635" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="393" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="635" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="393" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="1441" y="0"/>
+</item>
+<item historyLabel="Instance_terminator.java" index="0">
+<position info="not_deleted" x="1202" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="1441" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="1466" y="0"/>
+</item>
+<item historyLabel="Instance_terminator.java" index="0">
+<position info="not_deleted" x="1202" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="498" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="745" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="1441" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="Instance_runner.java" index="3">
+<position info="not_deleted" x="1069" y="0"/>
+</item>
+<item historyLabel="Instance_terminator.java" index="0">
+<position info="not_deleted" x="1202" y="0"/>
+</item>
+<item historyLabel="Instance_runner.java" index="3">
+<position info="not_deleted" x="1069" y="0"/>
+</item>
+<item historyLabel="Instance_runner.java" index="3">
+<position info="not_deleted" x="1032" y="0"/>
+</item>
+<item historyLabel="Instance_terminator.java" index="0">
+<position info="not_deleted" x="1427" y="0"/>
+</item>
+<item historyLabel="Instance_runner.java" index="3">
+<position info="not_deleted" x="1032" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="422" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="Instance_runner.java" index="3">
+<position info="not_deleted" x="1032" y="0"/>
+</item>
+<item historyLabel="Instance_terminator.java" index="0">
+<position info="not_deleted" x="1427" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="422" y="0"/>
+</item>
+<item historyLabel="Instance_runner.java" index="3">
+<position info="not_deleted" x="1032" y="0"/>
+</item>
+<item historyLabel="Instance_terminator.java" index="0">
+<position info="not_deleted" x="1427" y="0"/>
+</item>
+<item historyLabel="Instance_runner.java" index="3">
+<position info="not_deleted" x="2491" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="422" y="0"/>
+</item>
+<item historyLabel="Instance_terminator.java" index="0">
+<position info="not_deleted" x="1427" y="0"/>
+</item>
+<item historyLabel="Instance_runner.java" index="3">
+<position info="not_deleted" x="2491" y="0"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="422" y="0"/>
+</item>
+<item historyLabel="Instance_runner.java" index="3">
+<position info="not_deleted" x="1725" y="60"/>
+</item>
+<item historyLabel="AwsConsoleApp.java" index="1">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="Instance_state.java" index="2">
+<position info="not_deleted" x="422" y="0"/>
+</item>
+<item active="true" historyLabel="Instance_terminator.java" index="0">
+<position info="not_deleted" x="1427" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -219,5 +412,21 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="TerminateInstancesRequest.class" tooltip="com.amazonaws.services.ec2.model.TerminateInstancesRequest">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=instance_manager/\/home\/ryu\/Pulpit\/eclipse_projects\/load_web_tests_based_on_cloud_computing\/.metadata\/.plugins\/com.amazonaws.eclipse.sdk\/SDK\/1.2.3\/lib\/aws-java-sdk-1.2.3.jar&lt;com.amazonaws.services.ec2.model(TerminateInstancesRequest.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Instance_state.java" tooltip="instance_manager/src/emil/stupiec/Instance_state.java">
+<persistable path="/instance_manager/src/emil/stupiec/Instance_state.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AwsConsoleApp.java" tooltip="instance_manager/src/AwsConsoleApp.java">
+<persistable path="/instance_manager/src/AwsConsoleApp.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Instance_runner.java" tooltip="instance_manager/src/emil/stupiec/Instance_runner.java">
+<persistable path="/instance_manager/src/emil/stupiec/Instance_runner.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Instance_terminator.java" tooltip="instance_manager/src/emil/stupiec/Instance_terminator.java">
+<persistable path="/instance_manager/src/emil/stupiec/Instance_terminator.java"/>
+</file>
+</mruList>
 </workbench>
