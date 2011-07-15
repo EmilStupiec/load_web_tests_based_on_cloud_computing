@@ -10,6 +10,6 @@ public class AwsConsoleApp {
     		Thread.currentThread();
 			Thread.sleep(30000);
     	Instance_terminator instance_terminator=new Instance_terminator();
-    	instance_terminator.terminate_instance(instance_id);
+    	instance_terminator.terminate_instance("i-f0530f86");
     }
 }
