@@ -1,0 +1,90 @@
+!SESSION 2011-07-15 12:39:28.341 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_26
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=pl_PL
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-07-15 12:39:41.658
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-07-15 12:39:41.659
+!MESSAGE Conflict for 'AUTOGEN:::org.maven.ide.eclipse.openPomDependencyNode/org.maven.ide.eclipse.ui.openPomDependency':
+HandlerActivation(commandId=AUTOGEN:::org.maven.ide.eclipse.openPomDependencyNode/org.maven.ide.eclipse.ui.openPomDependency,
+	handler=ActionDelegateHandlerProxy(null,org.maven.ide.eclipse.actions.OpenPomAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1c6d11a),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.maven.ide.eclipse.openPomDependencyNode/org.maven.ide.eclipse.ui.openPomDependency,
+	handler=ActionDelegateHandlerProxy(null,org.maven.ide.eclipse.actions.OpenPomAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1c6d11a),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-07-15 12:39:41.659
+!MESSAGE Conflict for 'AUTOGEN:::org.maven.ide.eclipse.openProjectPageDependencyNode/org.maven.ide.eclipse.ui.openPomDependencyUrl':
+HandlerActivation(commandId=AUTOGEN:::org.maven.ide.eclipse.openProjectPageDependencyNode/org.maven.ide.eclipse.ui.openPomDependencyUrl,
+	handler=ActionDelegateHandlerProxy(null,org.maven.ide.eclipse.actions.OpenUrlAction:org.maven.ide.eclipse.openProjectPage),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1c6d11a),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.maven.ide.eclipse.openProjectPageDependencyNode/org.maven.ide.eclipse.ui.openPomDependencyUrl,
+	handler=ActionDelegateHandlerProxy(null,org.maven.ide.eclipse.actions.OpenUrlAction:org.maven.ide.eclipse.openProjectPage),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1c6d11a),sourcePriority=16384)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2011-07-15 12:41:00.900
+!MESSAGE Both 'org.eclipse.iam.pom.model' and 'org.maven.ide.eclipse.maven_model_edit' register a package for 'http://maven.apache.org/POM/4.0.0'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2011-07-15 12:41:00.905
+!MESSAGE Both 'org.eclipse.iam.pom.model' and 'org.maven.ide.eclipse.maven_model_edit' register an extension parser for 'pom'
+!SESSION 2011-07-15 12:43:57.547 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_26
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=pl_PL
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-07-15 12:44:11.055
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-07-15 12:44:11.055
+!MESSAGE Conflict for 'AUTOGEN:::org.maven.ide.eclipse.openPomDependencyNode/org.maven.ide.eclipse.ui.openPomDependency':
+HandlerActivation(commandId=AUTOGEN:::org.maven.ide.eclipse.openPomDependencyNode/org.maven.ide.eclipse.ui.openPomDependency,
+	handler=ActionDelegateHandlerProxy(null,org.maven.ide.eclipse.actions.OpenPomAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@79801c),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.maven.ide.eclipse.openPomDependencyNode/org.maven.ide.eclipse.ui.openPomDependency,
+	handler=ActionDelegateHandlerProxy(null,org.maven.ide.eclipse.actions.OpenPomAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@79801c),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-07-15 12:44:11.055
+!MESSAGE Conflict for 'AUTOGEN:::org.maven.ide.eclipse.openProjectPageDependencyNode/org.maven.ide.eclipse.ui.openPomDependencyUrl':
+HandlerActivation(commandId=AUTOGEN:::org.maven.ide.eclipse.openProjectPageDependencyNode/org.maven.ide.eclipse.ui.openPomDependencyUrl,
+	handler=ActionDelegateHandlerProxy(null,org.maven.ide.eclipse.actions.OpenUrlAction:org.maven.ide.eclipse.openProjectPage),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@79801c),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::org.maven.ide.eclipse.openProjectPageDependencyNode/org.maven.ide.eclipse.ui.openPomDependencyUrl,
+	handler=ActionDelegateHandlerProxy(null,org.maven.ide.eclipse.actions.OpenUrlAction:org.maven.ide.eclipse.openProjectPage),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@79801c),sourcePriority=16384)
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 2 0 2011-07-15 12:46:54.107
+!MESSAGE Unable to initialize previous AWS SDK for Java classpath entries - defaulting to latest version
+!STACK 0
+java.lang.Exception: No SDK install directory specified
+	at com.amazonaws.eclipse.sdk.ui.classpath.ClasspathContainerInitializer.initialize(ClasspathContainerInitializer.java:50)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2642)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2548)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2586)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1808)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:2652)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2578)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2679)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1866)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.getRootInfos(DeltaProcessingState.java:304)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.initializeRoots(DeltaProcessingState.java:249)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.processResourceDelta(DeltaProcessor.java:1753)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:1943)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:470)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:313)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1022)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1809)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2011-07-15 12:46:55.565
+!MESSAGE Both 'org.eclipse.iam.pom.model' and 'org.maven.ide.eclipse.maven_model_edit' register a package for 'http://maven.apache.org/POM/4.0.0'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2011-07-15 12:46:55.569
+!MESSAGE Both 'org.eclipse.iam.pom.model' and 'org.maven.ide.eclipse.maven_model_edit' register an extension parser for 'pom'

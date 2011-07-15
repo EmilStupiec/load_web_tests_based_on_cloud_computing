@@ -1,4 +1,5 @@
 import emil.stupiec.Instance_runner;
+import emil.stupiec.Instance_terminator;
 
 public class AwsConsoleApp {
 
@@ -6,6 +7,7 @@ public class AwsConsoleApp {
     	/*Instance_runner instance_runner=new Instance_runner();
     	String instance_id=instance_runner.run_instance();
     	System.out.print(instance_id);*/
-    	
+    	Instance_terminator instance_terminator=new Instance_terminator();
+    	instance_terminator.terminate_instance("i-f0530f86");
     }
 }

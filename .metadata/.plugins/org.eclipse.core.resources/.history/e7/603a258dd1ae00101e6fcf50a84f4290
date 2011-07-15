@@ -1,0 +1,11 @@
+import emil.stupiec.Instance_runner;
+
+public class AwsConsoleApp {
+
+    public static void main(String[] args) throws Exception {
+    	/*Instance_runner instance_runner=new Instance_runner();
+    	String instance_id=instance_runner.run_instance();
+    	System.out.print(instance_id);*/
+    	
+    }
+}

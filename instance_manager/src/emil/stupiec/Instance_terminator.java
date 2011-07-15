@@ -1,6 +1,38 @@
 package emil.stupiec;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.amazonaws.auth.AWSCredentials;
+import com.amazonaws.auth.PropertiesCredentials;
+import com.amazonaws.services.ec2.AmazonEC2;
+import com.amazonaws.services.ec2.AmazonEC2Client;
+import com.amazonaws.services.ec2.model.TerminateInstancesRequest;
+import com.amazonaws.services.ec2.model.TerminateInstancesResult;
+
 public class Instance_terminator {
+	private static AmazonEC2 ec2;
+	private static String instance_id;
+	private static TerminateInstancesResult terminate_instances_result;
+	public String terminate_instance(String instance_id) throws Exception{
+		initialize_aws_variables(instance_id);
+		return terminate();
+	}
+	private static void initialize_aws_variables(String instance_id_to_terminate) throws Exception {
+		AWSCredentials credentials = new PropertiesCredentials(
+				Instance_runner.class.getResourceAsStream("../../AwsCredentials.properties"));
+        ec2 = new AmazonEC2Client(credentials);
+        ec2.setEndpoint("ec2.eu-west-1.amazonaws.com");
+        instance_id=instance_id_to_terminate;
+        
+	}
+	private String terminate(){
+		List<String> instance_ids=new ArrayList<String>();
+		instance_ids.add(instance_id);
+		TerminateInstancesRequest terminate_instances_request=new TerminateInstancesRequest(instance_ids);
+        terminate_instances_result=ec2.terminateInstances(terminate_instances_request);
+		return terminate_instances_result.toString();
+	}
 	//System.out.print("Available images: "+describe_images_result.toString());
     /*DescribeAvailabilityZonesResult availabilityZonesResult = ec2.describeAvailabilityZones();
     System.out.println("You have access to " + availabilityZonesResult.getAvailabilityZones().size() +
@@ -17,6 +49,5 @@ public class Instance_terminator {
     }
     System.out.println("You have " + instances.size() + " Amazon EC2 instance(s) running.");*/
    
-	 //TerminateInstancesRequest terminate_instances_request=new TerminateInstancesRequest(instance_id);
-    //ec2.terminateInstances(terminate_instances_request);
+	
 }
